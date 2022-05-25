@@ -36,7 +36,7 @@ public class SearchSortedAndRotated {
 	}
 
 	private static void testCase() {
-		int array1[] = { 3, 4, 5, 6, 7, 8, 9,10, 1, 2 };
+		int array1[] = { 3, 4, 5, 6, 7, 8, 9, 10, 1, 2 };
 		runCase(array1, 1, 8);
 		int array2[] = { 5, 6, 7, 8, 9, 10, 1, 2, 3 };
 		runCase(array2, 3, 8);
@@ -68,4 +68,10 @@ public class SearchSortedAndRotated {
  * 
  * case4: actual = findNumber([30, 40, 50, 10, 20],0,4,10) expected = 3
  * 
+ */
+/*
+ * Asked In: Linkedin Goldman Sachs We rotate an ascending order sorted array at
+ * some point unknown to user. So for instance, 3 4 5 6 7 might become 5 6 7 3
+ * 4. Modify binary search algorithm to find an element in the rotated array in
+ * O(log n) time and O(1) Space complexity
  */

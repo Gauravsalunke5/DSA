@@ -43,3 +43,9 @@ public class FindMaximum {
  * 
  * case3: actual = findMaximum([120, 100, 80, 20, 0],0,4) expected = 120
  */
+/*
+ * One array of integers is given as an input ,which is initially increasing and
+ * then decreasing or it can be only increasing or decreasing , you need to find
+ * the maximum value in the array in O(Log n) Time complexity and O(1) Space
+ * Complexity Asked in: Amazon, Microsoft, Uber
+ */
