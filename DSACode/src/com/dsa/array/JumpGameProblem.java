@@ -1,7 +1,5 @@
 package com.dsa.array;
 
-import java.util.Iterator;
-
 public class JumpGameProblem {
 
 	private static int Jump(int[] num) {
