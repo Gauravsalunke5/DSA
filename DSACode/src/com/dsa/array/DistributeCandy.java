@@ -27,8 +27,7 @@ public class DistributeCandy {
 
 		// from right to left
 		for (int i = n - 2; i >= 0; i--) {
-			int cur = 1;
-			if (ratings[i] > ratings[i + 1]) {
+ 			if (ratings[i] > ratings[i + 1]) {
 				right[i] = right[i + 1] + 1;
 			} else {
 				// if not ascending, assign 1
