@@ -1,4 +1,4 @@
-package com.dsa.array;
+package com.dsa.matrix;
 
 public class SpiralMatrix {
 	static void spiralPrint(int m, int n, int matrix[][]) {

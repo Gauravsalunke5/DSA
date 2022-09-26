@@ -1,4 +1,4 @@
-package com.dsa.array;
+package com.dsa.matrix;
 
 public class MatrixRotation90 {
 
