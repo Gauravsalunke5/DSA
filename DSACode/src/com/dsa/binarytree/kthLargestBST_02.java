@@ -2,14 +2,14 @@ package com.dsa.binarytree;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-class Node {
-	int data;
-	Node left = null, right = null;
-
-	Node(int data) {
-		this.data = data;
-	}
-}
+//class Node {
+//	int data;
+//	Node left = null, right = null;
+//
+//	Node(int data) {
+//		this.data = data;
+//	}
+//}
 
 public class kthLargestBST_02 {
 	// Binary search insert

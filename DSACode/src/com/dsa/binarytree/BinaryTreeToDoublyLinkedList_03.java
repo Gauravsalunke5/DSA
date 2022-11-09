@@ -2,22 +2,21 @@ package com.dsa.binarytree;
 
 import java.util.ArrayList;
 
-import com.dsa.binarytree.TraversBinaryTree_01.Node;
 
 public class BinaryTreeToDoublyLinkedList_03 {
 
 	// Represent a node of the binary tree
-	public static class Node {
-		int data;
-		Node left;
-		Node right;
-
-		public Node(int data) {
-			this.data = data;
-			this.left = null;
-			this.right = null;
-		}
-	}
+//	public static class Node {
+//		int data;
+//		Node left;
+//		Node right;
+//
+//		public Node(int data) {
+//			this.data = data;
+//			this.left = null;
+//			this.right = null;
+//		}
+//	}
 
 	// Represent the root of the binary tree
 

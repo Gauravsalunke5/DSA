@@ -2,15 +2,15 @@ package com.dsa.binarytree;
 
 //01
 public class TraversBinaryTree_01 {
-	static class Node {
-		int data;
-		Node left, right;
-
-		public Node(int d) {
-			data = d;
-			left = right = null;
-		}
-	}
+//	static class Node {
+//		int data;
+//		Node left, right;
+//
+//		public Node(int d) {
+//			data = d;
+//			left = right = null;
+//		}
+//	}
 
 	Node root;
 
