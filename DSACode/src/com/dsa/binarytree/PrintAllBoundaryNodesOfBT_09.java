@@ -13,8 +13,6 @@ public class PrintAllBoundaryNodesOfBT_09 {
 		printLeftExternalNodes(node.left);
 		printleafNode(node);
 		printRightExternalNodes(node.right);
-		
-
 	}
 
 	private void printLeftExternalNodes(Node node) {
@@ -68,7 +66,28 @@ public class PrintAllBoundaryNodesOfBT_09 {
 		tree.root.left.right.left.left = new Node(17);
 		tree.printBoundary(tree.root);
 	}
-
+	
+	//****************NOTE
+//	https://leetcode.com/problems/binary-tree-right-side-view/
+//	Binary Tree Right Side View
+//	 public List<Integer> rightSideView(TreeNode root) {
+//	        List<Integer> result = new ArrayList<Integer>();
+//	        rightView(root, result, 0);
+//	        return result;
+//	    }
+//	    
+//	    public void rightView(TreeNode curr, List<Integer> result, int currDepth){
+//	        if(curr == null){
+//	            return;
+//	        }
+//	        if(currDepth == result.size()){
+//	            result.add(curr.val);
+//	        }
+//	        
+//	        rightView(curr.right, result, currDepth + 1);
+//	        rightView(curr.left, result, currDepth + 1);
+//	        
+//	    }
 }
 /* Try more Inputs
 Case 1:
