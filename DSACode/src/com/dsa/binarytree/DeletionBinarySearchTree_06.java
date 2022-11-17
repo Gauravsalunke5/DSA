@@ -2,7 +2,7 @@ package com.dsa.binarytree;
 
 public class DeletionBinarySearchTree_06 {
 
-	class Node {
+	public class Node {
 		int key;
 		Node left, right;
 

@@ -1,6 +1,4 @@
-package com.dsa.array;
-
-import com.dsa.binarytree.Node;
+package com.dsa.binarytree;
 
 public class LowestCommonAncestorBT_12 {
 
