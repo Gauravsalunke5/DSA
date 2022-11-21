@@ -1,6 +1,6 @@
 package com.dsa.binarytree;
 
-public class CheckNodesofBTisCousins {
+public class CheckNodesofBTisCousins_18 {
 
 	public boolean areCousins(Node root, Node x, Node y) {
 
@@ -48,7 +48,7 @@ public class CheckNodesofBTisCousins {
 		root.right.left.right = y2;
 		root.left.left.left = x2;
 
-		CheckNodesofBTisCousins i = new CheckNodesofBTisCousins();
+		CheckNodesofBTisCousins_18 i = new CheckNodesofBTisCousins_18();
 		System.out
 				.println("Node " + x1.data + " and Node " + y1.data + " are cousins??? " + i.areCousins(root, x1, y1));
 		System.out
