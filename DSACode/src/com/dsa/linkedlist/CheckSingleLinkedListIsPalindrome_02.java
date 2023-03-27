@@ -1,6 +1,17 @@
 package com.dsa.linkedlist;
 
 public class CheckSingleLinkedListIsPalindrome_02 {
+	
+	static class Node {
+		int data;
+		Node ptr;
+
+		Node(int d) {
+			ptr = null;
+			data = d;
+		}
+	}
+
 	public static void main(String args[]) {
 		Node one = new Node(2);
 		Node two = new Node(3);
@@ -20,20 +31,14 @@ public class CheckSingleLinkedListIsPalindrome_02 {
 	}
 
 	static boolean isPalindrome(Node head) {
-		// Write your Code here
+		if (head == null)
+			return false;
+
 		return true;
 	}
 }
 
-class Node {
-	int data;
-	Node ptr;
 
-	Node(int d) {
-		ptr = null;
-		data = d;
-	}
-}
 
 /*
 Check Single Linked List is Palindrome or not

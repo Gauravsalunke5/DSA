@@ -8,7 +8,7 @@ public class SortArrayOf012 {
 	public static void Sort012(int[] array, int end) {
 		int start = 0, mid = 0;
 		int pivot = 1;
-
+System.out.println(Arrays.toString(array));
 		while (mid <= end) {
 			if (array[mid] < pivot) { // current element is 0
 				swap(array, start, mid);
@@ -19,6 +19,9 @@ public class SortArrayOf012 {
 				--end;
 			} else // current element is 1
 				++mid;
+			
+			System.out.println(Arrays.toString(array));
+
 		}
 	}
 
@@ -30,7 +33,7 @@ public class SortArrayOf012 {
 	}
 
 	public static void main(String[] args) {
-		int[] array = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
+		int[] array = {0,1,1,2,0,2,1};
 
 		Sort012(array, array.length - 1);
 		System.out.println(Arrays.toString(array));
