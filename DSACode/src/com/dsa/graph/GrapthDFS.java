@@ -39,7 +39,8 @@ public class GrapthDFS {
 
 		ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>>();
 
-		for (int i = 0; i < 5; i++) {
+		int V = 6;
+		for (int i = 0; i < V; i++) {
 			adj.add(new ArrayList<>());
 		}
 
@@ -51,9 +52,11 @@ public class GrapthDFS {
 		adj.get(3).add(0);
 		adj.get(2).add(4);
 		adj.get(4).add(2);
-
+		adj.get(2).add(5);
+		adj.get(5).add(2);
+		
 		GrapthDFS gp = new GrapthDFS();
-		ArrayList<Integer> ans = gp.dfsofGraph(5, adj);
+		ArrayList<Integer> ans = gp.dfsofGraph(V, adj);
 		ListIterator<Integer> listIterator = ans.listIterator();
 		while (listIterator.hasNext()) {
 			System.out.print(listIterator.next() + " ");
