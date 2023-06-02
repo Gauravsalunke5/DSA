@@ -1,4 +1,4 @@
-package com.dsa.array;
+package com.dsa.array.algo;
 
 public class BinarySearch {
 	public static int binarySearch(int[] array, int left, int right, int key) {
