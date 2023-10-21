@@ -6,7 +6,9 @@ import java.util.Iterator;
 public class FindStockProfit {
 
 	static class Interval {
-		int buy, sell;
+		int buy=-1, sell=-1;
+		
+		 
 	}
 
 	// Stock Buy Sell to Maximize Profit using Valley Peak Approach
@@ -17,6 +19,43 @@ public class FindStockProfit {
 			if (prices[i] > prices[i - 1])
 				maxProfit += prices[i] - prices[i - 1];
 
+		System.out.println(maxProfit);
+	}
+	
+	void findProfit2(int prices[], int n) {
+
+		int maxProfit = 0;
+		ArrayList<Interval> sol = new ArrayList<Interval>();
+
+		Interval e = new Interval();
+
+		for (int i = 1; i < n; i++) {
+			if (prices[i] > prices[i - 1]) {
+				if (e.buy == -1)
+					e.buy = i - 1;
+				maxProfit += prices[i] - prices[i - 1];
+			} else {
+				if (e.buy != -1) {
+					e.sell = i-1;
+					sol.add(e);
+					e = new Interval();
+				}
+			}
+		}
+		if (e.buy != -1) {
+			e.sell = n-1;
+			sol.add(e);
+			e = new Interval();
+		}
+		
+		if (sol.isEmpty())
+			System.out.println("There is no day when buying the stock " + "will make profit");
+		else
+			for (Interval it : sol) {
+				System.out.println("Buy on day: " + it.buy + "        " + "Sell on day : " + it.sell);
+			}
+
+		System.out.println();
 		System.out.println(maxProfit);
 	}
 
@@ -73,12 +112,18 @@ public class FindStockProfit {
 	public static void main(String args[]) {
 		FindStockProfit stock = new FindStockProfit();
 
-		 int array[] = { 98, 178, 250, 300, 40, 540, 690 };
+		 int array[] = {45, 4,8,10,3,20,25,2 };
 
 	//	int array[] = { 1, 2, 3, 4, 5 };
 		int n = array.length;
-
+		
 		stock.findProfit(array, n);
+		
+		System.out.println();
+		stock.findProfit1(array, n);
+		
+		System.out.println();
+		stock.findProfit2(array, n);
 	}
 }
 

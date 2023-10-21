@@ -107,7 +107,7 @@ public class kthLargestBST_02 {
 			root = insert(root, key);
 		}
 
-		int k = 6;
+		int k = 3;
 		int res = kthLargestBST(root, k);
 
 		if (res != Integer.MAX_VALUE) {
@@ -125,7 +125,7 @@ public class kthLargestBST_02 {
 
 		
 		int p = k;
-		Node large = kthlargest(root, new int[] { k });
+ 		Node large = kthlargest(root, new int[] { k });
 		k = p;
 		Node small = kthsmallest(root, new int[] { k });
 		if (large == null) {
